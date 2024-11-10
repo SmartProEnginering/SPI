@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
+    <div id="header"></div>
     <header>
-        <h1>Smart Pro Engineering</h1>
+        <h1>A propos de Smart Pro Engineering</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">À propos</a></li>
+                <li><a href="index.html" class="btn btn-outline-primary">Accueil</a></li>
+                <li><a href="about.html" class="btn btn-outline-primary">À propos</a></li>
+                <li><a href="realisation.html" class="btn btn-outline-primary">Réalisation</a></li>
             </ul>
         </nav>
     </header>
@@ -21,13 +23,60 @@
         <section id="about">
             <h2>À propos de Smart Pro Engineering</h2>
             <p>Smart Pro Engineering est une entreprise technologique dédiée à la transformation numérique du secteur agro-pastoral. Notre mission est de fournir des solutions innovantes pour améliorer la durabilité, l'efficacité et la rentabilité des opérations agricoles et d'élevage.</p>
+
+            <div class="image-container">
+                <img src="images/image6.jpg" alt="Technologie agricole" class="zoom" onclick="openModal(this);">
+            </div>
+
             <p>Notre équipe d'experts combine son savoir-faire en agriculture, en technologie et en développement durable pour proposer des solutions personnalisées aux besoins de nos clients.</p>
+
+            <div class="image-container">
+                <img src="images/team-work.jpg" alt="Équipe de Smart Pro Engineering" class="zoom" onclick="openModal(this);">
+            </div>
+
             <p>Nous sommes convaincus que la technologie joue un rôle essentiel dans l'avenir de l'agriculture et de l'élevage. En exploitant les technologies de pointe, nous aidons nos clients à relever les défis de la production alimentaire durable et à maximiser leurs rendements.</p>
+
+            <h3>Exemples de Solutions</h3>
+            <ul>
+                <li><strong>Systèmes de surveillance des cultures :</strong> Utilisation de capteurs IoT pour surveiller l'humidité du sol et les conditions climatiques.</li>
+                <li><strong>Applications mobiles :</strong> Développement d'applications pour aider les agriculteurs à gérer leurs exploitations plus efficacement.</li>
+                <li><strong>Analyse de données :</strong> Utilisation d'analytique avancée pour optimiser les rendements et réduire les coûts.</li>
+            </ul>
+
+            <div class="image-container">
+                <img src="images/solutions.jpg" alt="Solutions agricoles" class="zoom" onclick="openModal(this);">
+            </div>
         </section>
     </main>
+
+    
+    <div id="imageModal" class="modal" onclick="closeModal();">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
 
     <footer>
         <p>&copy; 2024 Smart Pro Engineering</p>
     </footer>
+
+    <script src="script/script.js"></script> <!-- Lien vers le fichier JavaScript -->
+    <script>
+        // Charger l'en-tête
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        // Charger le pied de page si nécessaire
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
 </body>
 </html>
+
+
