@@ -8,7 +8,7 @@ document.getElementById("newsletter-form").addEventListener("submit", function(e
     logo.style.width = '10px';
   }
   else{
-    logo.style.width = '20px';
+    logo.style.width = '80px';
   }
 
   // Vérifiez si l'email est valide
