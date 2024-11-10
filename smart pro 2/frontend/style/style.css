@@ -87,7 +87,7 @@ main {
 footer {
   background-color: #0FB6D6;
   color: white;
-  padding: 5px 10px;
+  padding: 5px 2px;
   text-align: center;
   font-size: 12px;
   position: fixed;
@@ -106,8 +106,9 @@ footer {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #0F6FD6;
+  background-color: #05309e;
   color: white;
   text-decoration: yes;
+  font-weight: bold;
   cursor: pointer;
 }
