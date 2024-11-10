@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  background-color: #9DBABC;
+  background-color: #0D8CAC;
   color: white;
   padding: 20px 0;
   /*text-align: center;*/
@@ -84,7 +84,7 @@ main {
 }
 
 footer {
-  background-color: #9DBABC;
+  background-color: #0FB6D6;
   color: white;
   padding: 10px 0;
   text-align: center;
@@ -103,7 +103,7 @@ footer {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #1CC6F9;
+  background-color: #0F6FD6;
   color: white;
   text-decoration: yes;
   cursor: pointer;
