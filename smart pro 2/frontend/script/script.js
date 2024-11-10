@@ -5,10 +5,10 @@ document.getElementById("newsletter-form").addEventListener("submit", function(e
   const logo = document.querySlector('.logo');
   const width = window.innerwidth;
   if (width<768) {
-    logo.style.width = '20px';
+    logo.style.width = '10px';
   }
   else{
-    logo.style.width = '80px';
+    logo.style.width = '20px';
   }
 
   // Vérifiez si l'email est valide
