@@ -16,6 +16,21 @@ document.getElementById("newsletter-form").addEventListener("submit", function(e
     alert("Veuillez entrer une adresse email valide.");
     return;
   }
+  
+  const slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+
+function showSlide() {
+  slides.forEach((slide) => {
+    slide.classList.remove('active');
+  });
+
+  slides[currentSlide].classList.add('active');
+
+  currentSlide = (currentSlide + 1) % slides.length;
+}
+
+setInterval(showSlide, 6000); // Change the interval as needed
 
   // Envoyez la demande au serveur (backend)
   fetch('/subscribe', {
