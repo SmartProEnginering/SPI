@@ -18,19 +18,19 @@ document.getElementById("newsletter-form").addEventListener("submit", function(e
   }
   
   const slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
+  let currentSlide = 0;
 
-function showSlide() {
-  slides.forEach((slide) => {
-    slide.classList.remove('active');
-  });
+  function showSlide() {
+    slides.forEach((slide) => {
+      slide.classList.remove('active');
+    });
 
-  slides[currentSlide].classList.add('active');
+    slides[currentSlide].classList.add('active');
 
-  currentSlide = (currentSlide + 1) % slides.length;
-}
+    currentSlide = (currentSlide + 1) % slides.length;
+  }
 
-setInterval(showSlide, 6000); // Change the interval as needed
+  setInterval(showSlide, 4000); // Change the interval as needed
 
   // Envoyez la demande au serveur (backend)
   fetch('/subscribe', {
