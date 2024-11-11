@@ -81,7 +81,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 15px;
+  height: 10px;
   line-height: 1px; /* Match the height of the footer */
 }
 }
@@ -102,18 +102,18 @@ footer {
   cursor: pointer;
 }
 /* Styles pour l'effet d'agrandissement des images */
-.image-container {
+/*.image-container {
     margin: 20px 0; /* Ajoute un espacement autour des images */
-}
+}*/
 
-.zoom {
+/*.zoom {
     transition: transform 0.3s ease; /* Transition douce */
-    cursor: pointer; /* Changer le curseur au survol */
-}
+    cursor:/* pointer;*/ /* Changer le curseur au survol */
+}*/
 
-.zoom:hover {
+/*.zoom:hover {
     transform: scale(1.1); /* Agrandissement de 10% au survol */
-}
+}*/
 
 /* Styles pour le modal */
 .modal {
