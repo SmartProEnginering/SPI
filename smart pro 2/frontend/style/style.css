@@ -9,7 +9,7 @@ body {
     background-color: #1c85c7; /* Couleur de fond */
     color: white; /* Couleur du texte */
     padding: 5px 0; /* Espacement */
-    position: fixed; /* Fixe le header */
+    /*position: fixed; *//* Fixe le header */
     top: 0; /* Positionne le header en haut */
     left: 0;
     right: 0;
