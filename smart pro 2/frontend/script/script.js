@@ -5,7 +5,7 @@ document.getElementById("newsletter-form").addEventListener("submit", function(e
   const logo = document.querySlector('.logo');
   const width = window.innerwidth;
   if (width<768) {
-    logo.style.width = '10px';
+    logo.style.width = '20px';
   }
   else{
     logo.style.width = '80px';
@@ -42,4 +42,18 @@ function validateEmail(email) {
   // Vérification basique de l'adresse email
   const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return re.test(email);
+}
+function openModal(img) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    const captionText = document.getElementById("caption");
+
+    modal.style.display = "block"; // Afficher le modal
+    modalImg.src = img.src; // Définir l'image source
+    captionText.innerHTML = img.alt; // Définir la légende
+}
+
+function closeModal() {
+    const modal = document.getElementById("imageModal");
+    modal.style.display = "none"; // Masquer le modal
 }
