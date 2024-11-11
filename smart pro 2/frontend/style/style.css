@@ -107,8 +107,8 @@ footer {
 }*/
 
 /*.zoom {
-    transition: transform 0.3s ease; /* Transition douce */
-    cursor:/* pointer;*/ /* Changer le curseur au survol */
+    transition: transform 0.3s ease;
+    cursor: pointer; 
 }*/
 
 /*.zoom:hover {
