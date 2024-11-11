@@ -58,6 +58,10 @@ main {
 
 .service {
     margin-bottom: 20px; /* Espacement entre les services */
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 .newsletter {
