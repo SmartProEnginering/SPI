@@ -147,9 +147,10 @@ footer {
     padding: 10px 0;
 }
 .image-container {
-  width: 200px; /* Adjust width as needed */
-  height: 100px; /* Adjust height as needed */
-  overflow: hidden;
+    width: 400px; 
+    height: 300px; 
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .slide {
