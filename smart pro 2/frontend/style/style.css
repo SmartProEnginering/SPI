@@ -26,7 +26,7 @@ nav ul {
 }
 nav ul li {
     display: inline; /* Affiche les éléments en ligne */
-    margin-right: 15px; /* Espacement entre les liens */
+    margin-right: 10px; /* Espacement entre les liens */
 }
 
 nav li {
@@ -87,7 +87,7 @@ footer {
 }
 .logo{
   width: 50px;
-  height: auto;
+  height: 50px;
   margin: 0 auto;
   align: center;
 }
